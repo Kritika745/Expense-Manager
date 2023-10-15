@@ -1,0 +1,85 @@
+/* @media(max-width:576px){
+    #section1{
+        margin-left: 0px;
+    }
+    #section1 h1{
+        font-size:2rem;
+    }
+} */
+
+@media(max-width:1532px){
+    #section3::before{
+        height: 90%;
+        margin-top: 12px;
+    }
+}
+
+@media(max-width:1366px){
+    #container{
+        width: 50%;
+    }
+    #expenseList{
+        width: 90%;
+    }
+}
+@media(max-width:1048px){
+    #section3::before{
+        height: 80%;
+    }
+    .box{
+        padding: 25px;
+        font-size: 1rem;
+    }
+    #section1 h1{
+        font-size: 2.5rem;
+    }
+    #section1 h2{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:866px){
+    #box1{
+        font-size: 1.2rem;
+    }
+    #container{
+        width: 60%;
+    }
+    #section1{
+        margin-left: 0px;
+    }
+}
+ @media(max-width:700px){
+    .box{
+        padding: 10px;
+    }
+    #box1{
+        min-height:320px;
+    }
+    #section1{
+        height: 61.6vh;
+    }
+    #Section2 h1{
+        margin-top: 0px;
+    }
+    #container{
+        width: 70%;
+    }
+    #section3::before{
+        height: 70%;
+        margin-top: 23px;
+    }
+} 
+@media(max-width:642px){
+     #box1{
+        padding: 10px;
+     }
+     #box1 ul{
+        padding: 14px;
+     }
+     .box{
+        border-radius: 10px;
+     }
+     #container{
+        width: 80%;
+     }
+}

@@ -4,39 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="phone.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+ 
+
 </head>
 <body>
+
+    <nav id="navbar">
+        <button>SIGN UP</button>
+        <button>LOGIN</button>
+        <div > <i class="fa-solid fa-user fa-lg" style="color: #ffd400;"></i></div>
+
+    </nav>
+
     <section id="section1">
+           <h1>WELCOME TO BUDGET BUDDY!!</h1>
+           <h2>Your digital companion for efficient expense tracking,budget management and seamless expense reporting.</h2>
+           <h2> "Stay financially organized!"</h2>
+           
+           <div>
+            <button><a href="#section2">ADD EXPENSE</a></button>
+             <button><a href="#section3">VIEW EXPENSE</a></button>
+           </div>
+           
+    </section >
+     
+    <section id="section2">
+       <h1>ADD EXPENSE</h1>
+       
+       <div id="container" >
+       <form  >
+       
+        <label for="description" >Description:</label>
+        <input type="text" id="description" required placeholder="enter description">
 
-        <div id="heading">
-            <h1>BUDGET BUDDY</h1>
+        <label for="amount" >Amount:</label>
+        <input type="number" id="amount" required placeholder="enter amount">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="number" >Number of friends:</label>
+        <input type="number" id="number" required placeholder="enter number of friends:">
+
+        <button type="submit" onclick="addExpense(event)">Add Expense</button>
+      </form>
+      </div>
+
+    </section>
+    <section id="section3">
+
+      <h1>EXPENSE DETAILS</h1>
+      <div id="expenseList">
+        <div id="box1">
+          <h2>Expense List</h2>
+        <ul id="expenseItems"></ul>
         </div>
-
-       <div id="sidebar">
-        <a href="">choice</a>
-        <a href="">choice</a>
-        <a href="">choice</a>
-        <a href="">choice</a>
-
+        <div id="container1">
+          <div class="box" >Total Expenses: Rs <span id="totalExpenses">0.00</span></div>
+        <div class="box" >Amount Owed by Each Friend: Rs <span id="amountOwed">0.00</span></div>
+        </div>
         
-            
-       </div>
-        
-
-         
-    </section>
-    <section>
+      </div>
+    </div>
 
     </section>
-    <section>
 
-    </section>
+    <footer>
+      <div class="center">
+         Copyright &copy; www.myonlinemeal.com.All Rights Reserved
+      </div>
+  </footer>
+
+
+    <script src="script.js"></script>
+
+
+    
 </body>
 </html>

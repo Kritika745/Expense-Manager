@@ -3,42 +3,281 @@
     margin: 0;
 }
 
-#section1::before{
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    justify-content: end;
+    
+}
+
+#navbar::before{
     content:"";
+    background-color:black;
     position: absolute;
-    background: url(bg3.avif) no-repeat center center/cover;
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
+    opacity: 0.5;
     z-index: -1;
-    opacity: 0.3;
-
 
 }
 
-#heading{
+#navbar div{
+    height: 17px;
+    width: 17px;
+    margin: 3px 13px;
+    padding: 9px;
+    border: 3px solid  #ffd400;
+    border-radius: 50px;
+
+}
+#navbar button{
+    margin:  11px 10px;
+    padding: 8px 17px;
+    border-radius: 10px;
+    border: 3px solid #ffd400;
+    background-color: #ffffffb3;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#navbar button:hover{
+    background-color: #ffd400;
+
+}
+
+#section1{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 69.5vh;
+    margin-left: 139px;
+}
+#section1::before{
+    content:"";
+    position: absolute;
+    background: url(bg1.avif) no-repeat center center/cover; 
+    top: 0px;
+    left: 0px;
+    height: 81%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
 }
 
-#heading h1{
-          color: black;
-          font-size: 50px;
-          padding-top: 35px;
-          /* font-family: 'Pacifico', cursive; */
-          font-family: 'Permanent Marker', cursive;
+ #section1 h1{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin: 19px;
+  font-family: 'Young Serif', serif;
+  /* font-family: 'Bree Serif', serif;
+
+    */
+    text-shadow: 10px 3px 1px black;
+}
+#section1 h2{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 3px 3px black;
+    
+
 }
 
-#sidebar{
-    width: 15%;
-    background-color: rgb(37, 36, 36);
-    height: 40em;
+#section1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#section1 button{
+    margin:  18px 10px;
+    padding: 6px 21px;
+    border-radius: 10px;
+    border: 3px solid #ffd400;
+    background-color: #0000003d;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+    box-shadow: 5px 7px 10px black;
+   
+
+}
+
+#section1 button a{
+    text-decoration: none;
+    color: white;
+}
+#section1 button:hover{
+    background-color: #ffd400;
+
+}
+#section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#section2::before{
+    content:"";
+    position: absolute;
+    background: url(bg2.jpeg) no-repeat center center/cover;
+   height: 100%;
+   width: 100%;
+    z-index: -1;
+    opacity: 1;
+   
+} 
+#section2 h1{
+    color: black;
+    margin:30px;
+    font-size: 2.5rem;
+    font-family:'Bree Serif', serif ;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.56);
+    border: 2px solid #ffd400;
+    border-radius: 34px;
+    width: 40%;
+    margin-bottom: 70px;
+
+}
+form{
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin: 30px;
+
 }
 
-#sidebar a{
+#section2 label{
     color: white;
-    height: 25%;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    margin: 5px;
+    margin-top: 20px;
 }
+
+#section2 input{
+    padding: 9px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+#section2 button{
+    margin-top: 34px;
+    width: auto;
+    align-self: center;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: 3px solid #ffd400;
+    background-color:#ffffff42;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+    color: white;
+}
+#section2 button:hover{
+    background-color: #ffd400;
+
+}
+
+#section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.84); */
+
+}
+
+#section3::before{
+    content:"";
+    position: absolute;
+    background: url(bg3.webp) no-repeat center center/cover;
+   height: 100%;
+   width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+   
+} 
+#section3 h1{
+    color: black;
+    margin:25px;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    font-family:'Bree Serif', serif;
+}
+
+#expenseList{
+    width: 70%;
+}
+
+#box1{
+    background-color: rgba(0, 0, 0, 0.56);
+    border: 2px solid #ffd400;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 1.5rem;
+    min-height: 400px;
+    text-align: center;
+
+
+}
+#box1 ul{
+    list-style: none;
+    padding: 24px;
+}
+
+#box1 h2{
+    color:white;
+    font-size: 2rem;
+}
+#container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.box{
+    background-color: rgba(0, 0, 0, 0.56);
+    border: 2px solid #ffd400;
+    border-radius: 15px;
+    color: white;
+    margin: 10px;
+    padding: 44px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+
+
+
+
+
