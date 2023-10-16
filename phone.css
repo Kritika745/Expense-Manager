@@ -49,11 +49,12 @@
     }
 }
  @media(max-width:700px){
-    .box{
-        padding: 10px;
+    #container1{
+        flex-direction: column;
     }
+
     #box1{
-        min-height:320px;
+        min-height:350px;
     }
     #section1{
         height: 61.6vh;
@@ -65,7 +66,7 @@
         width: 70%;
     }
     #section3::before{
-        height: 70%;
+        height: 85%;
         margin-top: 23px;
     }
 } 
@@ -82,4 +83,118 @@
      #container{
         width: 80%;
      }
+}
+@media(max-width:446px){
+    #section1::before{
+        height: 65%;
+    }
+    #section1 h1{
+        font-size: 2rem;
+    }
+    #section1 h2{
+        font-size: 1rem;
+    }
+    #section1 button{
+        margin: 24px 13px;
+        padding: 6px 11px;
+        font-size: 1.2rem;
+    }
+    #section1{
+        height: 54.6vh;
+    }
+    #navbar div{
+        height: 14px;
+    width: 16px;
+    margin: 6px 8px;
+    padding: 9px;
+    }
+    #navbar button{
+        margin: 11px 5px;
+    padding: 5px 11px;
+   
+    }
+    #section2::before{
+        height:90%;
+    }
+    #section2 h1{
+        margin-top: 0px;
+    }
+    #conatiner{
+        width: 85%;
+    }
+    #section2 form{
+        margin: 18px;
+    }
+    #section2 label{
+        font-size: 1.2rem;
+        margin-top: 14px;
+    }
+    #section2 input{
+        font-size: 1.2rem;
+    }
+    #section2 button{
+        font-size: 1.2rem;
+    }
+    #section3 h1{
+        font-size: 2rem;
+    }
+    #box1 h2{
+        font-size: 1.2rem;
+    }
+    #box1 ul{
+        font-size: 1rem;
+    }
+    .box{
+        padding: 17px;
+    }
+    #section3::before{
+        height:80%;
+    }
+    #section2::before{
+        height:80%;
+    }
+ 
+}
+
+@media(max-width:389px){
+    .box{
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:354px){
+    #section1::before{
+        height: 60%;
+    }
+    #navbar button{
+        margin: 6px 3px;
+    padding: 4px 6px;
+    font-size: 0.8rem;
+    }
+    #section1 button{
+        font-size: 1rem;
+    }
+    #section2 h1{
+        font-size: 2rem;
+    }
+    #conatainer{
+        margin-bottom: 50px;
+    }
+    #section2 input{
+        font-size: 1rem;
+    }
+    #section2 label{
+        font-size: 1rem;
+    }
+    .box{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:306px){
+    #section3::before{
+        height:85%
+    }
+    #section3 h1{
+        font-size: 1.5rem;
+    }
 }
