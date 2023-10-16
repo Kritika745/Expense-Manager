@@ -39,17 +39,22 @@ html{
 
 }
 #navbar button{
-    margin:  11px 10px;
+    margin:  11px 0px;
     padding: 8px 17px;
-    border-radius: 10px;
-    border: 3px solid #ffd400;
-    background-color: #ffffffb3;
-    font-weight: bold;
+    border-radius: 22px;
+    /* border: 3px solid #ffd400; */
+    background-color: #ffffff00;
+    /* font-weight: bold; */
     cursor: pointer;
+    font-family: 'Bree Serif', serif;
+    color: white;
+    border: none;
+    font-size: 1rem;
 
 }
 #navbar button:hover{
     background-color: #ffd400;
+    color: black;
 
 }
 
@@ -79,17 +84,18 @@ html{
     text-align: center;
     margin: 19px;
   font-family: 'Young Serif', serif;
-  /* font-family: 'Bree Serif', serif;
+  text-shadow: 10px 10px 10px black;
+  /* font-family: 'Bree Serif', serif;*/
+ }
 
-    */
-    text-shadow: 10px 3px 1px black;
-}
+    
+
 #section1 h2{
     font-size: 1.5rem;
     color: white;
     text-align: center;
     font-family: 'Bree Serif', serif;
-    text-shadow: 3px 3px black;
+    text-shadow: 5px 5px 8px black
     
 
 }
@@ -144,6 +150,7 @@ html{
     margin:30px;
     font-size: 2.5rem;
     font-family:'Bree Serif', serif ;
+    text-shadow: 4px 4px 7px #00000078;
 }
 #container{
     display: flex;
@@ -154,6 +161,7 @@ html{
     border-radius: 34px;
     width: 40%;
     margin-bottom: 70px;
+    box-shadow: 1px 1px 5px 3px #000000a3;
 
 }
 form{
@@ -220,6 +228,7 @@ form{
     margin-top: 0px;
     font-size: 2.5rem;
     font-family:'Bree Serif', serif;
+    text-shadow: 4px 4px 7px #00000078;
 }
 
 #expenseList{
@@ -236,6 +245,7 @@ form{
     font-size: 1.5rem;
     min-height: 400px;
     text-align: center;
+    box-shadow: 1px 1px 5px 3px #000000a3;
 
 
 }
@@ -267,6 +277,9 @@ form{
     align-items: center;
     justify-content: center;
     font-family: 'Bree Serif', serif;
+    box-shadow: 1px 1px 5px 3px #000000a3;
+    
+
 
 }
 
