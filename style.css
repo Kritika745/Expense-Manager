@@ -38,6 +38,10 @@ html{
     border-radius: 50px;
 
 }
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
 #navbar button{
     margin:  11px 0px;
     padding: 8px 17px;
@@ -126,6 +130,7 @@ html{
 }
 #section1 button:hover{
     background-color: #ffd400;
+    color: black;
 
 }
 #section2{

@@ -64,3 +64,4 @@ function addExpense(event) {
     
     displayExpenses();
     calculateTotalExpenses();
+    
